@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>parecidosOjos</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+
+	<div id="main-content">
+		
+		<div class='blur-background' style='display:none'>
+			<!--<img src=""> --> 
+			
+			<!--<svg id="svg-image-blur">
+			    <image x="0" y="0" id="svg-image" width="300" height="200" xlink:href="../screenshot.png" />
+
+			    <filter id="blur-effect-1">
+			        <feGaussianBlur stdDeviation="10" />
+			    </filter>
+			</svg> -->
+		</div>
+
+		<div id='black-background' style='display:none;'></div>
+		<div id='black-background2' style='display:none;'></div>
+		<div id='flash-background' style='display:none;'></div>
+		<div id='app-background'></div>
+			<div class='boton-terminar'>
+				<img id='logout' class='terminar-esquina' src="../assets/salida1.png" style='display:none'>				
+			</div>
+		<div id='sigues-ahi' style='display:none; z-index:6;'>
+			<canvas id='timer1' style='display:none'></canvas>
+
+
+			<!--<div id="timer1" data-timer="10"></div>-->
+			<span class='fuente5' style='display:none'>¿Sigues ahí? Toca para continuar.</span>
+		</div>
+
+		<div id='salir' style='display:none; z-index:4;'>
+			<span class='fuente5'>¿Seguro quieres salir?</span>
+			
+			<div id='eleccion'>
+				<img id='si' src="../assets/si1.png" class='breath'>
+				<img id='no' src="../assets/no1.png" class='breath'>
+			</div>
+		</div>
+
+		<div id="s-inicial" class="screen">
+			<canvas id='personaje-animado'></canvas>
+			<!--<div id='ojitos_spritesheet'></div>-->
+
+			<div id="titulo" style='display:none'>
+				<img src="../assets/titulo_ojos.png">
+			</div>
+
+			<div class="icono-rfid" style='display:none'>
+				<!--<img src="../assets_finales/rfid.png">-->
+				<canvas id='mariposa_rfid'></canvas>
+			</div>
+			
+			<span id='pasa_aqui'>Pasa aquí tu brazalete.</span>
+		</div>
+		
+
+		<div id="s-elige" class="screen">
+
+
+			<!--<div class='boton-terminar'>
+				<img class='terminar-esquina' src="../assets/cerrar-ws1_66_66.png" style='display:none'>				
+			</div>-->
+			<div id="contenido">
+				<div id="hola">
+					<div id="texto-elige">
+						<h2></h2>
+					</div>
+					<div class='nombres'>
+						<div class='nom1'>
+							<span class='fuente2'>Jean</span>
+						</div>
+						<div class='nom2'>
+							<span class='fuente2'></span>
+						</div>
+						<div id='instruccion_braza' style='display:none'>
+							<span class='fuente2'>Pasa el brazalete de tu amigo.</span>
+						</div>
+
+					</div>
+					<div id="caras" style='display:none'>
+						<div id="cara1">
+							<div id="face1" class="acomodo_cara circular aro">
+								<!--<img src='../img/faces/face.jpg'class="circular2">-->
+								<img src="../assets/loader.gif" class='circular2'>
+							</div>
+							
+						</div>
+					
+						<div id="cara2">
+							<div id="face2" class="acomodo_cara circular">
+								<img id='ojo2' src="../assets/invitado.png" class='circular2'>
+							</div>
+							
+						</div>
+					</div>
+					<div id="boton1" style="display:none">
+						<img src="../assets/continuar1.png" class='breath'>
+					</div>
+				</div> <!---->
+				
+<!--
+				<div id="lista">
+					
+					<div id="lista-usuarios" style='display:none'>
+						
+						<div id="wrapper">
+							<div id="1" class='cara-lateral'>
+								<img src='../assets/perfil.png' class='marco'>
+								<img src='' class='circular2 fotito seleccionable'>
+							</div>
+							<div id="2" class='cara-lateral'>
+								<img src='../assets/perfil.png' class='marco'>
+								<img src='' class='circular2 fotito seleccionable'>
+							</div>
+							<div id="3" class='cara-lateral'>
+								<img src='../assets/perfil.png' class='marco'>
+								<img src='' class='circular2 fotito seleccionable'>
+							</div>
+							<div id="4" class='cara-lateral'>
+								<img src='../assets/perfil.png' class='marco'>
+								<img src='' class='circular2 fotito seleccionable'>
+							</div>
+							<div id="5" class='cara-lateral'>
+								<img src='../assets/perfil.png' class='marco'>
+								<img src='' class='circular2 fotito seleccionable'>
+							</div>
+						</div>
+					</div>
+					<div id="invita-amigo" style='display:none'>
+						
+						<div id='scan-rfid'>
+							<img id='peeerfil'  src="../assets/perfil.png" class='marco'>
+							<img id='mariposaa' src="../assets/rfid.png">
+						</div>
+						
+						
+					</div>
+				</div>
+
+			-->
+				<div id="lista">
+					
+					<div id="lista-usuarios">
+						
+						<div id="wrapper">
+							<div class='cara-lateral 1'>
+								<img src='../assets/perfil.png' class='marco'>
+								<img id='foto1' src='' class='circular2 fotito seleccionable'>
+							</div>
+							<div class='cara-lateral 2'>
+								<img src='../assets/perfil.png' class='marco'>
+								<img id='foto2' src='' class='circular2 fotito seleccionable'>
+							</div>
+							<div class='cara-lateral 3'>
+								<img src='../assets/perfil.png' class='marco'>
+								<img id='foto3' src='' class='circular2 fotito seleccionable'>
+							</div>
+							<div class='cara-lateral 4'>
+								<img src='../assets/perfil.png' class='marco'>
+								<img id='foto4' src='' class='circular2 fotito seleccionable'>
+							</div>
+							<div class='cara-lateral 5'>
+								<img src='../assets/perfil.png' class='marco'>
+								<img id='foto5' src='' class='circular2 fotito seleccionable'>
+							</div>
+						</div>
+					</div>
+					<div class="invita-amigo">
+						
+						<div id='scan-rfid'>
+							<img class='peeerfil'  src="../assets/perfil.png" class='marco'>
+							<img class='mariposaa' src="../assets/rfid.png">
+						</div>
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="s-coloca" class="screen">
+			<!--<div class='boton-terminar'>
+				<img class='terminar-esquina' src="../assets/cerrar-ws1_66_66.png" style='display:none'>				
+			</div> -->
+			<div id="arriba">
+				<div id="texto-arriba">
+					<img id='inst3' src="../assets2/instrucción-parecidos2_660_98.png" style='display:none;'>
+				</div>
+			</div>
+			<div id='noom' class='nom1'>
+				<span class="fuente2" style='display:none;'>Usuario</span>
+			</div>
+			
+			<div id="lodemas" >
+				<div id="video" class="circular2">
+					<img id='silueta' src="../assets/cara.png" style='display:none;'>
+					<video id="videocam" class='circular aro' width="500" height="500"autoplay style='display:none;'></video>
+
+					<!-- Contenedor del snapshot -->
+					<canvas id="videocanvas" class='circular aro' width="500" height="500" style='display:none'></canvas>
+					<img id="img-canvas" src="" style="display:none; opacity:0">
+					
+				</div>
+				
+				
+			</div>
+			<div id="cam" style='display:none;'>
+				<img src="../assets/camara1.png" class='breath'>
+			</div>
+			<div id='instruccion_abajo' style="display:none">
+				<span class='fuente3'>Coloca tu cara dentro de la silueta y toca la cámara.</span>
+			</div>
+			<div id='contador' style='display:none'>
+				<img src="../assets_finales/camara3.png">
+			</div>
+			<div id='continuar1' style='display:none' >
+				<img src='../assets/continuar1.png' class='breath'>
+			</div>
+		</div>
+
+		<div id="s-zoom" class="screen">
+			<!--<div class='boton-terminar'>
+				<img class='terminar-esquina' src="../assets/cerrar-ws1_66_66.png" style='display:none'>				
+			</div>-->
+			<div id="texto-usa">
+				<img id='inst5' src="../assets2/intrucción-parecidos1_784_98.png" style='display:none'>
+			</div>
+			<div class='nombres' style='display:none'>
+				<div class='nom1'>
+					<span class='fuente2'>Jean</span>
+				</div>
+				<div class='nom2'>
+					<span class='fuente2'>Danny</span>
+				</div>
+			</div>
+			<div id="interaccion" ondragover="event.preventDefault()">
+				<div id="ojos" style='display:none'>
+					<div id="ojoizq-wrap" class='circular aro'>
+						<canvas id="canvas-izq" class="circular"></canvas>
+					</div>	
+					<div id="ojoder-wrap" class='circular aro'>
+						<canvas id="canvas-der" class="circular"></canvas>
+					</div>					
+				</div>
+				<div id='inst4' style='display:none'>
+					<span class='fuente2' style='font-size:2vw;'>Desliza para acercarte.</span>
+				</div>
+				
+				<img id='slider' src="../assets/bolaslider.png" style='display:none'>
+				<img id='barra' src="../assets/slider.png" style='display:none'>
+				<div id='slider_big'></div>
+				<img id="terminar" src='../assets/terminar1.png' style='display:none' class='breath'>
+				<!--<img id='manita' src="../assets_finales/mano.png" style='display:none'>-->
+				<!--<div id='toca_terminar' style='display:none'>
+					<span class='fuente5'>Toca "Terminar" para dejar la actividad.</span>
+				</div>-->
+			
+			</div>
+
+
+				<div id="lista">
+					
+					<div id="lista-usuarios">
+						
+						<div id="wrapper">
+							<div class='cara-lateral 1'>
+								<img src='../assets/perfil.png' class='marco'>
+								<img id='foto1' src='' class='circular2 fotito seleccionable'>
+							</div>
+							<div class='cara-lateral 2'>
+								<img src='../assets/perfil.png' class='marco'>
+								<img id='foto2' src='' class='circular2 fotito seleccionable'>
+							</div>
+							<div class='cara-lateral 3'>
+								<img src='../assets/perfil.png' class='marco'>
+								<img id='foto3' src='' class='circular2 fotito seleccionable'>
+							</div>
+							<div class='cara-lateral 4'>
+								<img src='../assets/perfil.png' class='marco'>
+								<img id='foto4' src='' class='circular2 fotito seleccionable'>
+							</div>
+							<div class='cara-lateral 5'>
+								<img src='../assets/perfil.png' class='marco'>
+								<img id='foto5' src='' class='circular2 fotito seleccionable'>
+							</div>
+						</div>
+					</div>
+					<div class="invita-amigo">
+						
+						<div id='scan-rfid'>
+							<img class='peeerfil'  src="../assets/perfil.png" class='marco'>
+							<img class='mariposaa' src="../assets/rfid.png">
+						</div>
+						
+						
+					</div>
+				</div>
+
+		</div>
+
+		<div id="s-final" class="screen">
+
+			<div id="texto-final" style='display:none'>
+				<span class='fuente2' style='font-size:3.5vw;'>¡Pequeñas diferencias te hacen único!</span>
+			</div>
+			<!--
+			<div id="ojo" class='circular aro'>
+		
+				
+				<img id='ojo_final1' src="" class='circular'/>
+	  			<img id='ojo_final2' src="" class='circular'/>
+	  			<img id='ojo_final3' src="" class='circular'/>
+	  			<img id='ojo_final4' src="" class='circular'/>
+	  			<img id='ojo_final4' src="" class='circular'/>
+	  	
+			</div> -->
+			<!--<div id="loader-final"></div>-->
+			<!--<img id='reiniciar' src="../assets_finales/reiniciar1.png" class='breath'>-->
+		</div>
+
+	</div>
+
+
+
+</body>
+<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script src="../js/animsition.min.js"></script>
+<script type="text/javascript" src='../js/png.js'></script>
+<script type="text/javascript" src='../js/zlib.js'></script>
+
+<script src="../js/tracking/build/tracking-min.js"></script>
+<script type="text/javascript" src="../js/tracking/build/data/eye.js"></script>
+<script type="text/javascript" src="../js/tracking/build/data/face.js"></script>
+<script type="text/javascript" src="../js/serialPort.js"></script>
+<script type="text/javascript" src="../js/interact.min.js"></script>
+<script type="text/javascript" src="../js/TimeCircles.js"></script>
+<script type="text/javascript" src="../js/spriteCanvas.js"></script>
+
+<script type="text/javascript" src="../js/interaction.js"></script>
+
+</html>

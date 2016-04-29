@@ -1,0 +1,151 @@
+
+
+
+
+EN PANTALLA DE ZOOM
+
+Primero aparece nombres y circulos
+despues slider e instruccion de desliza
+
+4 despues de que empiezan a mover, aprece boton terminar y las instruccion y desaparece el de desliza
+
+
+
+
+
+
+
+Transiciones de 2 segundos aprox
+
+TODOS LOS CIRCULOS EN CENTRO HORIZONTAL Y VERTICAL
+
+primer pantalla
+	solo fondo 
+	Depsues titulo y sub (espero 2 segundos y)
+	despues icono rfid
+
+Cuando pasas brazalete:
+	tarda 2 segundos en desapecerer, todo al mismo tiempo
+
+
+Primero HOLA ANDREA (pantalla elige)
+	@ que aprezcan primero los circulos, luego las caras y al ultimo boton de salir. 1 segundo cada una.
+	@ ya que aprecen todos, espero 4 segundos, en el 3 cambio nombre a solo ANDRE(con fade) y aprece el CONCEPTO
+	(blur, fondo y caja al mismo tiempo)
+	@ cuando den click en continuar, desaparecer en 2 segundos.
+
+
+PANTALLA ELIGE OTRO:
+
+	@click en foto, sin efecto se pone en circulo.
+	@ boton continuar no desaparece una vez aparecido. (sin efectos)
+
+
+PANTALLA DE FOTO:
+	CENTRAR CIRUCLO DE CAMARA VERTICALMENTE
+	intro:
+		usuario, silueta, boton camara. Espero 2 segundos y aparece texto arriba.
+
+	AL tomar foto:
+		@sube barra roja en 1 segundo, estando arriba el contador esta en 2.
+		@ Efecto flash en toda la pantalla.
+
+
+PANTALLA DE ZOOM
+
+	@ primero los dos ciruclos. espero 2 segundos y:
+	@ aparece slider, espero 2 segundos, 
+	@ aprece instruccion de desliza y al mismo tiempo la manita. (moviendose)
+
+	@ La manita desaparece 2 segundos despues de que el usuario mueve la bolita.
+	@ texto desliza desaparece 4 segundos despues de que desaparece la mano.
+
+	@ Texto de arriba (terminar) empieza a aprecer en segundo 8, termina en 10
+
+
+
+ULTIMA PANTALLA
+ @ en el segundo 2 aparece circulo
+ @ en el segundo 4 aparece texto
+
+ @ Alternar mitades de ojos, sin efectos, 1/2 segundo.
+
+ acaba y regresa a la primera.
+
+
+
+ PANTALLA SIGUES AHI
+
+ @ Aparece 20 despues del ultimo toque.
+ @ fade 2 segundo pantalla negra,
+ @ inmediantamente aparecen contador y texto, y tardan 2 segundos en aparecer.
+@ el contador ya completamente visible esta en segundo 8.
+ @ el contador es de 10 segundos.
+
+
+ @ Cuando le dan continuar, desparcer todo en 2 segundos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OVERLAY ! segundo despues de logout
+texto pasa aqui tu brazalete 
+textos con porcentaje
+Tipografia de mensajes seguro que quieres salir y sigus ahi
+texto foto 
+
+bug dos fotos
+boton terminar va de lado derecho
+
+
+
+
+contenedor cara1 mas y cara 2 mide 1420px
+
+
+cuadro mas mide 90 px 
+cada ciruclo de cara mide 608
+
+dos cirucloas ocupan 1214 px enconces 
+
+
+
+2 circulos y signo mas es 1314
+
+
+
+
+En LA PANTalla de zoom las caras
+
+
+En pantalla de seleccion opacar las que no se seleccionan con 50% opacidad
+
+
+En pantalla de foto, mostrar la foto mala y despues desaparecer
+
+
+En ultima pantalla hace fadeIn y fadeOut
+
+
+
+5559692957 Telefono Dany
+
+
+
+
+
+
+
